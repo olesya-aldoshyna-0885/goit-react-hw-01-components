@@ -8,7 +8,6 @@ export const Statistics = ({
     stats,
 }) => {
     return (
-
     <section class="statistics">
         {{title} && <h2 class="title">{title}</h2>}
         <ul class="stat-list">
@@ -24,5 +23,11 @@ export const Statistics = ({
 
 Statistics.propTypes = {    
     title: PropTypes.string,
-    stats: PropTypes.array.isRequired
+    stats: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string.isRequired,
+            label: PropTypes.string.isRequired,
+            percentage: PropTypes.number.isRequired,
+        }).isRequired
+  ).isRequired,
 }
