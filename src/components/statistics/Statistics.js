@@ -6,7 +6,7 @@ import {
   StatisticItem,
   StattisticLabel,
   StattisticValue 
-} from "../Statistics/Statistics.styled.js"
+} from "./Statistics.styled.js"
 
 export const Statistics = ({
     title,

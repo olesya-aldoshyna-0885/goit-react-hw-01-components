@@ -7,7 +7,7 @@ import {
     TableBody,
     BodyRow,
     BodyCell
-} from "../Transaction/TransactionHistory.styled";
+} from "./TransactionHistory.styled";
 
 export const TransactionHistory = ({ items }) => {
     return (
