@@ -11,7 +11,7 @@ import {
   Location, 
   Label,
   Quantity
- } from "../Profile/Profile.styled"
+ } from "../profile/Profile.styled.js"
 
 export const Profile = ( {
     username,
